@@ -1,0 +1,46 @@
+DOCKER HUB
+
+login to docker - "docker login -u <user_name>"
+
+pull an image from docker hub - "docker pull <image_name>"
+
+push an image to docker hub - "docker push <image_name>"
+
+search hub for an image - "docker search <image_name>"
+
+
+DOCKER IMAGES
+
+build an image  -  "docker build -t <image_name>"
+
+list local images  -  "docker images"
+
+delete an image  - "docker rmi <image_name>"
+
+remove all unused images  -  "docker image prune"
+
+
+DOCKER CONTAINERS
+
+create and run container with custom name - 
+"docker run --name <container_name> <image_name>"
+
+run a container and publish containers port to the host - 
+"docker run -p <host_port>:<continer_port> <image_name>"
+
+run a container in the background - "docker run -d <image_name>"
+
+start or stop and existing container - 
+"docker start|stop <container_name> or <container id>"
+
+remove stopped container - "docker rm <container_name>"
+
+open a shell inside a running container - "docker exec -it <container_name> sh"
+
+inspect a running container - "docker inspect <continer_name/id>"
+
+list currently running containers - "docker ps"
+
+list all docker containers - "docker ps -a"
+
+viee resource usage stats - "docker container stats"
